@@ -71,7 +71,7 @@ La Evolución Diferencial (ED) es un algoritmo de optimización basado en poblac
 ### Algoritmo de Afilado: Búsqueda Tabú
 La Búsqueda Tabú es un procedimiento metaheurístico que utiliza memoria adaptativa para evitar soluciones repetitivas. Optimiza los parámetros de afilado aplicando una máscara adaptativa que maximiza la nitidez. Las iteraciones controlan las mejoras en el SNR, garantizando un aumento de claridad sin distorsiones.
 
-<h1 align="center">Créditos</h2>
+## Créditos
 
 <p align="center">
   <img src="https://practicas.cucei.udg.mx/dist/imagenes/logo_cucei_blanco.png" alt="Logo CUCEI" width="350">
