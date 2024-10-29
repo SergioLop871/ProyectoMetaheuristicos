@@ -101,15 +101,20 @@ class ImageApp:
         window.title("Resultados de filtrado")
 
         # Convertir las imágenes de OpenCV a PIL para poder mostrarlas en Tkinter
-        noisy_image_pil = Image.fromarray(noisy_image)
-        filtered_image_pil = Image.fromarray(filtered_image)
+        noisy_image_cv = cv2.cvtColor(noisy_image, cv2.COLOR_BGR2RGB)
+        filtered_image_cv = cv2.cvtColor(filtered_image, cv2.COLOR_BGR2RGB)
+
+        # Convertir las imagenes de OpenCV a PIL para poder mostrarlas en Tkinter
+        noisy_image_pil = Image.fromarray(noisy_image_cv)
+        filtered_image_pil = Image.fromarray(filtered_image_cv)
 
         # Verificar si sharpened_image es un objeto Image o un array
         if isinstance(sharpened_image, Image.Image):
             sharpened_image_pil = sharpened_image  # Ya es una imagen PIL
         else:
-            # Si es un array, conviértelo a PIL
-            sharpened_image_pil = Image.fromarray(sharpened_image)
+            # Si es un array, convertir a PIL
+            sharpened_image_cv = cv2.cvtColor(sharpened_image, cv2.COLOR_BGR2RGB)
+            sharpened_image_pil = Image.fromarray(sharpened_image_cv)
 
         # Convertir PIL a ImageTk
         self.noisy_image_tk = ImageTk.PhotoImage(noisy_image_pil)
