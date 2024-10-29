@@ -162,7 +162,7 @@ app.resizable(False, False)
 image_app = ImageApp(app)
 
 # Descripción breve del proyecto
-label_description = ctk.CTkLabel(app, text="\nEste programa aplica un suavizado optimizado a la imagen utilizando Evolución Diferencial.\nSeleccione una imagen para comenzar.\n\nPara resultados más rápidos se sugiere usar una imagen a blanco y negro.", anchor="center")
+label_description = ctk.CTkLabel(app, text="\nEste programa aplica un suavizado inicial optimizado a la imagen utilizando Evolución Diferencial.\nAdemas, genera una mejora relativa de imagen optimizando mascaras de afilado y suavizado gracias a un algoritmo Taboo.\nSeleccione una imagen para comenzar.\n\nPara resultados más rápidos se sugiere usar una imagen a blanco y negro.", anchor="center")
 label_description.pack(pady=20, padx=20)
 
 # Botón para cargar imagen
