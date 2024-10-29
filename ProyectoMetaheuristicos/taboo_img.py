@@ -161,7 +161,10 @@ def sharpen_image(image_pil, update_progress, sharpen_iters):
     # Aplicación de los filtros a la imagen
     final_image = apply_filters(image, best_blur_mask, best_sharp_mask)
 
-    # Convertir la imagen final a PIL antes de devolver
-    final_image_pil = Image.fromarray(final_image)
+    # cambio BGR A RGB 
+    final_image_cv = cv2.cvtColor(final_image, cv2.COLOR_BGR2RGB)
+
+    # Regresar el formato a PIL
+    final_image_pil = Image.fromarray(final_image_cv)
 
     return final_image_pil, best_blur_mask, best_sharp_mask, best_snr
