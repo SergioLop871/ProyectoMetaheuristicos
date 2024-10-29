@@ -9,6 +9,7 @@ Este proyecto implementa un sistema de procesamiento de imágenes con una interf
 - [Configuración e Instalación](#configuracion-e-instalacion)
 - [Uso de la interfaz](#uso-de-la-interfaz)
 - [Detalles Técnicos](#detalles-tecnicos)
+- [Demostracion del resultado](#demostracion-del-resultado)
 - [Créditos](#creditos)
 
 ## Introducción 
@@ -70,6 +71,10 @@ La Evolución Diferencial (ED) es un algoritmo de optimización basado en poblac
 
 ### Algoritmo de Afilado: Búsqueda Tabú
 La Búsqueda Tabú es un procedimiento metaheurístico que utiliza memoria adaptativa para evitar soluciones repetitivas. Optimiza los parámetros de afilado aplicando una máscara adaptativa que maximiza la nitidez. Las iteraciones controlan las mejoras en el SNR, garantizando un aumento de claridad sin distorsiones.
+
+## Demostracion del resultado
+![Interfaz del Proyecto](https://drive.google.com/uc?id=1dGm3yCAPW_VVDtDOMaSQhhI3ITBvHIhK)
+
 
 ## Créditos
 
